@@ -32,4 +32,4 @@ def time_view(request):
 
 def workdir_view(request):
     workdir = os.listdir()
-    return HttpResponse(', '.join(workdir))
+    return HttpResponse('<br>'.join(workdir))
